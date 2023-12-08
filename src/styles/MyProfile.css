@@ -1,0 +1,26 @@
+.profile_card{
+    height: 70vh;
+    width: 50%;
+    border: #bbbaba;
+    border-radius: 20px;
+}
+.profile_card img{
+    height: 15vh;
+}
+.profile-pic{
+   margin: 14vh 0;
+}
+.profile-pic p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.profile-body{
+    margin-top: 30px;
+}
+.profile-body input{
+    background: #ebebeb;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid rgb(212, 208, 208);
+}
+

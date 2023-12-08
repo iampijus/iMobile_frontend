@@ -1,0 +1,33 @@
+.confirm-order-container {
+  margin-top: 10vh;
+  margin-bottom: 40vh;
+  margin-left: 4vw;
+}
+.order-summery{
+  padding-left: 15vw;
+  margin-top: 8vh;
+}
+.proceed-payment {
+  width: 15vw;
+  background-color: rgb(255, 123, 7);
+  border: none;
+}
+
+.hr-confirmorder {
+  width: 250px;
+  color: black;
+}
+.subTotal{
+  margin-left: 100px;
+}
+.confirm-order-cart-title{
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(87, 89, 89);
+}
+.confirm-order-address{
+  margin-left: 33px;
+}
+.confirm-processing{
+  margin:280px 0px 430px;
+}

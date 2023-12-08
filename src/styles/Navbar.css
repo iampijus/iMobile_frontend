@@ -1,0 +1,27 @@
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  animation: stickyHeader 0.3s ease forwards;
+}
+@keyframes stickyHeader {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+nav ul li:hover {
+  font-weight: bold;
+}
+
+/* @media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .nav-register {
+    display: none;
+  }
+} */

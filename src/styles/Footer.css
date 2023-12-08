@@ -1,0 +1,61 @@
+footer {
+	background: #101010;
+	padding: 80px 0;
+	/* margin-top: 10vh; */
+}
+.single-content {
+	text-align: center;
+	padding: 115px 0;
+}
+.single-box p {
+	color: #fff;
+	line-height: 1.9;
+}
+.single-box h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+}
+.single-box .card-area i {
+	color: #ffffff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.single-box ul {
+	list-style: none;
+	padding: 0;
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 2.5;
+	font-weight: 100;
+	transition: all 0.3s ease;
+}
+.single-box ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.single-box h2 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.socials .social-icons:hover{
+	cursor: pointer;
+}
+#basic-addon2 {
+	background: #fe1e4f;
+	color: #fff;
+}
+@media (max-width: 767px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}

@@ -1,0 +1,30 @@
+.continue-button{
+   background-color: rgb(255, 123, 7);
+   padding: 8px 80px;
+   border: none;
+}
+.shipping-details-form{
+   width: 20vw;
+}
+.checkout-input-field{
+   display: flex;
+   border: 1px solid rgb(200, 200, 200);
+   margin: 15px 0;
+   border-radius: 3px;
+}
+.checkout-input-field input{
+   width: 100%;;
+   background: transparent;
+   border: 0;
+   outline: 0;
+   padding: 0px 15px ;
+   margin-top: 11px;
+}
+.checkout-input-field .checkout-icons{
+   margin-left: 15px;
+   
+   margin-top: 15px;
+}
+.checkout-icons{
+   font-size: 20px;
+}
