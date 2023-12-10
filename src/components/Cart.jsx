@@ -27,7 +27,7 @@ const Cart = ({getTotalPrice}) => {
 
   const fetchCartData = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/getcartitems", {
+      const res = await axios.post("https://imobile-backend.onrender.com/getcartitems", {
         email: userData.email,
       });
       const data = await res.data;
@@ -58,7 +58,7 @@ const Cart = ({getTotalPrice}) => {
   // handle the remove button of the cart item
   const handleRemove = async(id) => {
     try{
-      const res=await axios.post("http://localhost:5000/removecartitem", {email:userData.email ,id});
+      const res=await axios.post("https://imobile-backend.onrender.com/removecartitem", {email:userData.email ,id});
       if(res.status===200){
         toast.success("Item removed successfully", {
             position: "top-left",
