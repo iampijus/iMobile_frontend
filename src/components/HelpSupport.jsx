@@ -28,7 +28,7 @@ const HelpSupport = () => {
     //send the data to the server
     try {
       const response = await axios.post(
-        "http://localhost:5000/helpsupport",
+        "https://imobile-backend.onrender.com/helpsupport",
         user
       );
       if (response.status === 201) {
