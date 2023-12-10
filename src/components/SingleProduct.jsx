@@ -14,7 +14,7 @@ const SingleProduct = (props) => {
   // Fetch the single product details from the database
   const fetchSingleProduct = async (url) => {
     try {
-      const res = await axios.post("http://localhost:5000/singleproduct", {
+      const res = await axios.post("https://imobile-backend.onrender.com/singleproduct", {
         id,
       });
       const product = await res.data;
@@ -58,7 +58,7 @@ const SingleProduct = (props) => {
   const addToCart = async (cartItem) => {
     const { name, email, phone } = userData;
     const data = { name, email, phone, cartItem };
-    const res = await axios.post("http://localhost:5000/postcartitems", data);
+    const res = await axios.post("https://imobile-backend.onrender.com/postcartitems", data);
     if (res.status === 200) {
       toast.success("Added to The Cart!", {
         position: "top-left",
