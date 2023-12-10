@@ -44,7 +44,7 @@ const Contact = () => {
           });
       } else {
         const response = await axios.post(
-          "http://localhost:5000/contactus",
+          "https://imobile-backend.onrender.com/contactus",
           user
         );
         if (response.status === 200) {
