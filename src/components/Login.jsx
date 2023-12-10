@@ -51,7 +51,7 @@ const Login = () => {
   const loginUser = async (event) => {
     event.preventDefault();
     const { email, password } = user;
-    const res = await fetch("https://imobile-backend.onrender.com/signin", {
+    const res = await fetch("https://imobile-backend.vercel.app/signin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
