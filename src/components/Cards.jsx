@@ -20,7 +20,7 @@ const Cards = (props) => {
     const { name, email, phone } = userData;
     const data = { name, email, phone, cartItem };
 
-    const res = await axios.post("http://localhost:5000/postcartitems", data);
+    const res = await axios.post("https://imobile-backend.onrender.com/postcartitems", data);
 
     if (res.status === 200) {
       toast.success("Added to The Cart!", {
