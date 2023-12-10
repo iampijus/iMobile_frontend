@@ -21,7 +21,7 @@ const Orders = () => {
   }, []);
   const fetchOrderData = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/ordereditems", {
+      const res = await axios.post("https://imobile-backend.onrender.com/ordereditems", {
         email: userData.email,
       });
       const data = await res.data;
