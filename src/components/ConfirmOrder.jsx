@@ -37,7 +37,7 @@ const ConfirmOrder = (props) => {
   // get cart items
   const fetchCartData = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/getcartitems", {
+      const res = await axios.post("https://imobile-backend.onrender.com/getcartitems", {
         email: userData.email,
       });
       const data = await res.data;
@@ -56,10 +56,10 @@ const ConfirmOrder = (props) => {
     try {
       const {
         data: { key },
-      } = await axios.get("http://localhost:5000/getkey");
+      } = await axios.get("https://imobile-backend.onrender.com/getkey");
       const {
         data: { order },
-      } = await axios.post("http://localhost:5000/payment", {
+      } = await axios.post("https://imobile-backend.onrender.com/payment", {
         amount,
       });
 
@@ -84,7 +84,7 @@ const ConfirmOrder = (props) => {
           };
 
           const res = await axios.post(
-            "http://localhost:5000/paymentverify",
+            "https://imobile-backend.onrender.com/paymentverify",
             verifyPayload
           );
           if (res.data.success) {
@@ -94,7 +94,7 @@ const ConfirmOrder = (props) => {
             const { name, email, phone } = userData;
 
             const data = { name, email, phone, amount, shippingAddress, cart };
-            await axios.post("http://localhost:5000/postordereditems", data);
+            await axios.post("https://imobile-backend.onrender.com/postordereditems", data);
 
             // navigate to the order successful page
             navigate("/ordersuccessful");
