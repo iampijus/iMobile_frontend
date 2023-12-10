@@ -13,7 +13,7 @@ const Products = ({ addToCart }) => {
   const [showSearch, setShowSearch] = useState(false);
 
   // Fetch the product details from the database
-  const url = "http://localhost:5000/products";
+  const url = "https://imobile-backend.onrender.com/products";
 
   const fetchProductsData = async (url) => {
     try {
@@ -35,7 +35,7 @@ const Products = ({ addToCart }) => {
 
   // to filter the product brand wise
   const filterProduct = async (brand) => {
-    const res = await axios.post("http://localhost:5000/filterproducts", {
+    const res = await axios.post("https://imobile-backend.onrender.com/filterproducts", {
       brand,
     });
     const updatedData = await res.data;
