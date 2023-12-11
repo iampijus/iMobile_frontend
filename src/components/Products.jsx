@@ -30,7 +30,7 @@ const Products = ({ addToCart }) => {
     fetchProductsData(url);
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1000);
   }, []);
 
   // to filter the product brand wise
